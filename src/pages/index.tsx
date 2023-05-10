@@ -6,6 +6,7 @@ import Hero from '@/components/hero'
 import Usp from '@/components/usp';
 import Services from '@/components/services';
 import Steps from '@/components/steps';
+import PreApproval from '@/components/preApproval'
 import HowItWorks from '@/components/howItWorks';
 import CTA from '@/components/cta';
 import Footer from '@/components/footer'
@@ -19,6 +20,7 @@ export default function Home() {
       <Usp/>
       <Services/>
       <Steps/>
+      <PreApproval />
       <HowItWorks />
       <CTA/>
       <Footer />
