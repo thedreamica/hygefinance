@@ -95,8 +95,8 @@ const Hero = () => {
         <Box>
             <Image
                 src="BQwkKh9.png"
-                width={740}
-                height={640}
+                width={840}
+                height={680}
                 alt="Picture of the author"
             />
         </Box>
