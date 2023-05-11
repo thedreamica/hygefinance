@@ -2,7 +2,6 @@ import Typography from '@mui/material/Typography';
 import Box from '@mui/material/Box';
 import TextField from '@mui/material/TextField';
 import Button from '@mui/material/Button';
-import { useTheme } from '@mui/material';
 import Card from '@mui/material/Card';
 import { CheckCircleFill } from '@styled-icons/bootstrap/CheckCircleFill'
 
@@ -69,11 +68,26 @@ const CTA = () => {
                 <CheckCircleFill fill={'#0033FF'} size={16} /> &nbsp; Exceptional service and support from our team of financial
                 experts
             </Typography>
+            <Typography sx={{
+                ...regularFonts
+            }}>
+                <CheckCircleFill fill={'#0033FF'} size={16} /> &nbsp; Fast and hassle-free loan process
+            </Typography>
+            <Typography sx={{
+                ...regularFonts
+            }}>
+                <CheckCircleFill fill={'#0033FF'} size={16} /> &nbsp; Quick approvals and easy repayment options
+            </Typography>
+            <Typography sx={{
+                ...regularFonts
+            }}>
+                <CheckCircleFill fill={'#0033FF'} size={16} /> &nbsp; Competitive interest rates and flexible terms
+            </Typography>
         </Box>
         <Card sx={{
             display: 'flex',
             flexDirection: 'column',
-            width: '570px',
+            width: '40%',
             padding: '70px 50px'
         }}>
             <Typography sx={{
@@ -93,6 +107,10 @@ const CTA = () => {
                 <TextField placeholder='Email' />
                 <TextField placeholder='Phone number' />
                 <TextField placeholder='How can we help you ?' />
+                <Button sx={{
+                    width: '23%',
+                    height: '52px'
+                }} variant="contained">Submit</Button>
             </Box>
         </Card>
     </Box>

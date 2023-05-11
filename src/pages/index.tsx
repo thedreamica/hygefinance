@@ -10,12 +10,14 @@ import PreApproval from '@/components/preApproval'
 import HowItWorks from '@/components/howItWorks';
 import CTA from '@/components/cta';
 import Footer from '@/components/footer'
+import Navbar from '@/components/navbar';
 
 const inter = Inter({ subsets: ['latin'] })
 
 export default function Home() {
   return (
     <Box>
+      <Navbar />
       <Hero/>
       <Usp/>
       <Services/>
