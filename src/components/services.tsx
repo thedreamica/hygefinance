@@ -83,7 +83,7 @@ const Services = () => {
             display: 'flex',
             flexWrap: 'wrap',
             gap: spacing(4),
-            width: '80%',
+            width: '100%',
             justifyContent: 'center'
         }}>
             <ServiceCard/>
