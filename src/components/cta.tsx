@@ -21,7 +21,7 @@ const CTA = () => {
           md: "row",
         },
         padding: {
-          xs: "0 10px",
+          xs: "0 10px 70px",
           md: "80px 140px 80px",
         },
         justifyContent: "space-between",

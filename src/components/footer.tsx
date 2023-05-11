@@ -6,7 +6,7 @@ import Button from '@mui/material/Button'
 const Footer = () => {
     return <Box sx={{
         display: 'flex',
-        padding: '80px 140px 80px',
+        padding: { xs: '0 10% 70px', md: '80px 140px 80px' },
         justifyContent: {
             md: 'space-between'
         },
@@ -14,19 +14,22 @@ const Footer = () => {
             md: 'flex-end'
         },
         flexDirection: {
-            sx: 'column',
+            xs: 'column',
             md: 'row'
+        },
+        gap: {
+            xs: '60px'
         }
     }}>
         <Box sx={{
             display: 'flex',
             flexDirection: 'column',
-            width: '30%',
+            width: { xs: '100%', md: '30%' },
         }}>
             <Image src="/1JaI7HJ.png" alt="finance-logo" width={140} height={80} />
             <Typography sx={{
                 marginTop: '24px',
-                width: '70%',
+                width: { xs: '100%', md: '70%' },
                 fontSize: '12px',
                 fontWeight: 600
             }}>
@@ -34,7 +37,7 @@ const Footer = () => {
             </Typography>
         </Box>
         <Box sx={{
-            width: '30%'
+             width: { xs: '100%', md: '30%' },
         }}>
             <Typography sx={{
                 fontSize: '24px',
@@ -64,46 +67,48 @@ const Footer = () => {
             </Typography>
         </Box>
         <Box sx={{
-            width: '30%'
+             width: { xs: '100%', md: '30%' },
         }}>
             <Box sx={{
                 display: 'flex',
                 flexWrap: 'wrap'
             }}>
                 <Typography sx={{
-                    fontSize: '50px',
-                    lineHeight: '70px',
-                    fontWeight: 700,
+                    fontSize: { xs: '30px', md: '50px' },
+                    lineHeight: { xs: '30px', md: '70px' },
+                    fontWeight: { xs: 600, md: 700 },
                     color: '#FFFFFF'
                 }}>
                     Simple
                 </Typography>
                 <Typography sx={{
-                    fontSize: '50px',
-                    lineHeight: '70px',
-                    fontWeight: 700,
+                    fontSize: { xs: '30px', md: '50px' },
+                    lineHeight: { xs: '30px', md: '70px' },
+                    fontWeight: { xs: 600, md: 700 },
                     color: '#FFCC00'
                 }}>
                     &
                 </Typography>
                 <Typography sx={{
-                    fontSize: '50px',
-                    lineHeight: '70px',
-                    fontWeight: 700,
+                    fontSize: { xs: '30px', md: '50px' },
+                    lineHeight: { xs: '30px', md: '70px' },
+                    fontWeight: { xs: 600, md: 700 },
                     color: '#FFFFFF'
                 }}>
                     Reliable
                 </Typography>
                 <Typography sx={{
-                    fontSize: '50px',
-                    lineHeight: '70px',
-                    fontWeight: 700,
+                    fontSize: { xs: '30px', md: '50px' },
+                    lineHeight: { xs: '30px', md: '70px' },
+                    fontWeight: { xs: 600, md: 700 },
                     color: '#FFFFFF'
                 }}>
                     Loans
                 </Typography>
             </Box>
-            <Button>
+            <Button sx={{
+                padding: 0
+            }}>
                 Contact us
             </Button>
         </Box>
