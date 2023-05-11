@@ -21,14 +21,20 @@ const Point = ({
             display: 'flex'
         }}>
             <RecordCircleFill height="32px" fill="#0033FF" />
-            <Typography>
+            <Typography sx={{
+                color: '#000000'
+            }}>
                 {h1}
             </Typography>
-            <Typography>
+            <Typography sx={{
+                 color: '#000000'
+            }}>
                 {subtext}
             </Typography>
         </Box>
-        <Typography>
+        <Typography sx={{
+                color: '#000000'
+            }}>
             {content}
         </Typography>
     </Box>
@@ -38,13 +44,24 @@ const Point = ({
 const HowItWorks = () => {
     return <Box sx={{
         display: 'flex',
-        flexDirection: 'column'
+        flexDirection: 'column',
+        alignItems: 'center',
+        backgroundColor: '#FFFFFF',
+        padding: '80px 140px 80px'
     }}>
-        <Typography>
-
+        <Typography sx={{
+            color: '#A9AAAD',
+            fontSize: '15px',
+            fontWeight: 700
+        }}>
+            About us
         </Typography>
-        <Typography>
-
+        <Typography sx={{
+            fontSize: '50px',
+            fontWeight: 700,
+            color: '#000000'
+        }}>
+            Learn how Hyge Finance works
         </Typography>
         <Box>
             <Box>
